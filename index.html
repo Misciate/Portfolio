@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <div id="particles-js"></div>
     <nav id="desktop-nav">
         <div class="logo">Trung Tran</div>
         <div>
@@ -51,7 +52,7 @@
                 <button class="btn btn-color-2" onclick="window.open('assets/CVFINAL.pdf')">
                     Download CV
                 </button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                <button class="btn btn-color-2" onclick="location.href='./#contact'">
                     Contact Info
                 </button>
             </div>
@@ -63,7 +64,7 @@
             </div>
         </div>
     </section>
-    <section id="about">
+    <section id="about" class="hidden">
         <p class="section__text__p1">Get To Know More</p>
         <h1 class="title">About Me</h1>
         <div class="section-container">
@@ -86,22 +87,23 @@
                 <div class="text-container">
                     <p>
                         I am a dedicated and proactive IT student specializing in Artificial Intelligence
-                        and Computer Vision, seeking to leverage my expertise in deep learning, image processing,
-                        and vision-language models to contribute to innovative AI-driven solutions. I aim to apply
+                        and Computer Vision, seeking to leverage my expertise in deep learning,
+                        vision-language models to contribute to innovative AI-driven solutions. I aim to apply
                         my skills in developing robust computer vision systems, optimizing model performance, and
-                        supporting cutting-edge projects in medical imaging and autonomous systems, while
-                        continuously advancing my technical proficiency in a dynamic, professional environment.
+                        supporting cutting-edge projects in medical imaging and autonomous systems.
                     </p>
                 </div>
             </div>
         </div>
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
     </section>
-    <section id="experience">
+    <section id="experience" class="hidden">
         <p class="section__text__p1">Explore My</p>
         <h1 class="title">Experience</h1>
         <div class="experience-details-container">
             <div class="about-containers">
+
+                <!-- FRONTEND -->
                 <div class="details-container">
                     <h2 class="experience-sub-title">Frontend Development</h2>
                     <div class="article-container">
@@ -122,22 +124,8 @@
                         <article>
                             <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
                             <div>
-                                <h3>SASS</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
                                 <h3>JavaScript</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>TypeScript</h3>
-                                <p>Basic</p>
+                                <p>Intermediate</p>
                             </div>
                         </article>
                         <article>
@@ -149,28 +137,37 @@
                         </article>
                     </div>
                 </div>
+
+                <!-- BACKEND -->
                 <div class="details-container">
                     <h2 class="experience-sub-title">Backend Development</h2>
                     <div class="article-container">
                         <article>
                             <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
                             <div>
+                                <h3>Python</h3>
+                                <p>Advanced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Node.js</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>FastAPI / Flask</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
                                 <h3>PostgreSQL</h3>
                                 <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Node JS</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Express JS</h3>
-                                <p>Intermediate</p>
                             </div>
                         </article>
                         <article>
@@ -182,11 +179,55 @@
                         </article>
                     </div>
                 </div>
+
+                <!-- AI & MACHINE LEARNING -->
+                <div class="details-container">
+                    <h2 class="experience-sub-title">AI & Machine Learning</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Computer Vision</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Deep Learning (CNN, UNet, ResNet)</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>YOLO / MobileNetV2</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Vision-Language Models</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Transfer Learning</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
             </div>
         </div>
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
     </section>
-    <section id="projects">
+
+    <section id="projects" class="hidden">
         <p class="section__text__p1">Browse My Recent</p>
         <h1 class="title">Projects</h1>
         <div class="experience-details-container">
@@ -243,7 +284,7 @@
         </div>
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
     </section>
-    <section id="contact">
+    <section id="contact" class="hidden">
         <p class="section__text__p1">Get in Touch</p>
         <h1 class="title">Contact Me</h1>
         <div class="contact-info-upper-container">
@@ -270,6 +311,12 @@
         </nav>
         <p>© 2025 Trung Tran. All Rights Reserved.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS.load('particles-js', 'particles.json', function() {
+            console.log('callback - particles.js config loaded');
+        });
+    </script>
     <script src="script.js"></script>
 </body>
 
